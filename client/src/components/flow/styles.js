@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-width: 80vw;
+width: 75vw;
 height: 100vh;
 float: right;
 `
@@ -9,10 +9,11 @@ float: right;
 
 export const Modal = styled.div`
 float: left;
-width: 15vw;
+width: 25vw;
 height: 100vh;
 background-color: #FFF;
 color: #000;
+overflow: scroll;
 `
 // Content Square
 
@@ -23,8 +24,50 @@ background: #ffd8d2;
 text-align: center;
 `
 
+export const CardsButtonsContent = styled.div`
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+display: flex;
+margin-top: 100px;
+`
+export const CardButtons = styled.div`
+display: flex;
+flex-direction: column;
+position: relative;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+box-sizing: border-box;
+margin: 4px;
+width: 80px;
+height: 90px;
+border: 2px dashed #e1e5ea;
+border-radius: 15px;
+background-color: #fff;
+color: #8492a6;
+text-align: center;
+cursor: pointer;
+transition: border-color .15s,color .15s;
+transform: translate3d(0, 0, 0);
+will-change: border-color,color;
+`
+
+export const CardIconButton = styled.div`
+color: #8492a6;
+text-align: center;
+cursor: pointer;
+`
+
+export const CardTextButton = styled.div`
+color: #8492a6;
+text-align: center;
+cursor: pointer;
+`
+
 export const ContentBody = styled.div`
 display: flex;
+flex-direction: column;
 justify-content: center;
 `
 
@@ -34,7 +77,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 min-height: 110px;
-margin-top: 5px;
+margin-top: 10px;
 width: 90%;
 height: 10%;
 border-radius: 10px;
@@ -159,5 +202,6 @@ export const InputTypeTimeDelay = styled.select`
 border-radius: 5px;
 max-width: 45%;
 `
+
 
 

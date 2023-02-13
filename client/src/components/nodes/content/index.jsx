@@ -21,7 +21,6 @@ const ContetntSquare = ({selected, data, setOutputData}) => {
     dispatch(undoChange())
   }
   
-
 /*   const handleClick = () => {
     setOutputData({ message: 'Hello World!' });
   }; */
@@ -29,8 +28,7 @@ const ContetntSquare = ({selected, data, setOutputData}) => {
   return (
     <Container /* onClick={handleClick} */>
       <H1><BiBookContent/>Conteúdo</H1>
-      {selected && <p>Selecionado </p>}
-      <p>O tempo é de: {typingDelay}</p>
+      
       <NodeResizer 
       minHeight={200}
       minWidth={200}
